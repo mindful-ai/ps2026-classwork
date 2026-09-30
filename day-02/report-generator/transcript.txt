@@ -1,0 +1,20 @@
+>>> col = 'name,age,regid,phy,chem,math,bio,avg,rank\n'
+>>> cols = col.split(',')
+>>> cols = [c.strip() for c in col.split(',')]
+>>> cols
+>>> rows
+['Vijay', '14', 'HPE001', '99', '98', '97', '36', '0', '0']
+>>> dict(zip(cols, rows))
+{'name': 'Vijay', 'age': '14', 'regid': 'HPE001', 'phy': '99', 'chem': '98', 'math': '97', 'bio': '36', 'avg': '0', 'rank': '0'}
+>>> # -----------------------
+>>> cd = {}
+>>> sd = dict(zip(cols, rows))
+>>> sd
+{'name': 'Vijay', 'age': '14', 'regid': 'HPE001', 'phy': '99', 'chem': '98', 'math': '97', 'bio': '36', 'avg': '0', 'rank': '0'}
+>>> sd['regid']
+'HPE001'
+>>> cd[sd['regid']] = sd
+>>> cd
+{'HPE001': {'name': 'Vijay', 'age': '14', 'regid': 'HPE001', 'phy': '99', 'chem': '98', 'math': '97', 'bio': '36', 'avg': '0', 'rank': '0'}}
+>>> # -----------------------------
+>>>
