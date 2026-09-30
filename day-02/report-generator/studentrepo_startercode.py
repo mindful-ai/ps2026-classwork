@@ -45,6 +45,15 @@ print('-'*60 + ' > First Step')
 # Repeat this process for all the entries in the csv file
 
 classdict = {}
+cols = content[0]
+cols = [col.strip() for col in cols.split(',')]
+print(cols)
+for student in content[1:]:
+    rows = student.split(',')
+    rows = [row.strip() for row in rows]
+    studentdict = dict(zip(cols, rows))
+    print(studentdict)
+    classdict[studentdict['regid']] = studentdict 
 
 print(classdict)
 print('-'*60 + ' > Second Step')
@@ -56,6 +65,12 @@ print('-'*60 + ' > Second Step')
 
 # [LAB] Write code to calculate the average for all the students
 
+for student in classdict.keys():
+    sum = 0
+    for subject in ['phy', 'chem', 'math', 'bio']:
+        sum += int(classdict[student][subject])
+    avg = sum / 4
+    classdict[student]['avg'] = avg
 
 
 print(classdict)
@@ -71,7 +86,14 @@ print('-'*60 + ' > Third Step')
 
 # [LAB] Write code to calculate the rank for all the students
 
+avgs = list(set([classdict[student]['avg'] for student in classdict.keys()]))
+avgs.sort(reverse=True)
 
+for avg in avgs:
+    rank = avgs.index(avg) + 1
+    for student in classdict.keys():
+        if classdict[student]['avg'] == avg:
+            classdict[student]['rank'] = rank
 
 
 print(classdict)
@@ -85,7 +107,7 @@ print('-'*60 + ' > Fourth Step')
 
 path = r"students_completed.csv"
 f = open(path, "w")
-f.write(coldata)
+# f.write(coldata)
 
 for regid in classdict.keys():
     r = list(zip(*classdict[regid].items()))[1]
