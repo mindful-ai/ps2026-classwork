@@ -1,0 +1,42 @@
+{
+  "9a8d6d6a": {
+    "account_id": "9a8d6d6a",
+    "name": "Purushotham",
+    "balance": 10000.0
+  },
+  "253a9aee": {
+    "account_id": "253a9aee",
+    "name": "Anil Kumar",
+    "balance": 90.0
+  },
+  "a21b03c2": {
+    "account_id": "a21b03c2",
+    "name": "Sunil",
+    "balance": 100.0
+  },
+  "2dffe91e": {
+    "account_id": "2dffe91e",
+    "name": "Alice Hopper",
+    "balance": 900.0
+  },
+  "07eb410d": {
+    "account_id": "07eb410d",
+    "name": "'Raj'",
+    "balance": 0.0
+  },
+  "aa6bd1c9": {
+    "account_id": "aa6bd1c9",
+    "name": "Ram",
+    "balance": 0.0
+  },
+  "98c943c6": {
+    "account_id": "98c943c6",
+    "name": "john",
+    "balance": 0.0
+  },
+  "0bcbabbb": {
+    "account_id": "0bcbabbb",
+    "name": "1000",
+    "balance": 0.0
+  }
+}

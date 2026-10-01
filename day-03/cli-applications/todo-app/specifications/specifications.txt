@@ -1,0 +1,58 @@
+✅ Problem Description: CLI TODO Application
+--------------------------------------------------------------------------------------------
+Objective:
+
+Build a Command-Line Interface (CLI) TODO application using OOP principles in Python. 
+The application should allow users to:
+
+    - Add new tasks
+    - View all tasks
+    - Mark tasks as completed
+    - Delete tasks
+    - Save/load tasks from a file
+
+Requirements:
+-------------------------------
+
+Each task must have a unique ID, a description, and a status (completed or pending).
+The app should maintain a persistent list of tasks by saving to and loading from a file.
+OOP principles like encapsulation, abstraction, and modularization should be used.
+Code should be structured in multiple files.
+Include unit tests for all core functionalities using the unittest module.
+
+📁 Project Structure
+
+        todo_app/
+        │
+        ├── main.py               # Entry point for the CLI app
+        ├── task.py               # Task class definition
+        ├── task_manager.py       # TaskManager class for managing tasks
+        ├── storage.py            # Handles saving/loading from a file
+        ├── tests/
+        │   ├── __init__.py
+        │   ├── test_task.py
+        │   ├── test_task_manager.py
+        │   └── test_storage.py
+        └── tasks.json            # JSON file to persist tasks
+
+CMD: from root of the app -> todo_app/> python -m unittest discover -s tests
+
+🔍 Feature List
+
+        Add task
+        View all tasks
+        Mark task as completed
+        Delete task
+        Save/load tasks
+        Auto-save after each operation
+
+🧪 Test Plan
+
+Feature	Test Case Description
+
+Add Task	           Task is added with unique ID and stored correctly
+View All Tasks	           Returns the list of all added tasks
+Mark as Completed	   Marks the specified task as completed
+Delete Task	           Deletes the task with the given ID
+Save/Load Tasks	           Tasks are saved to and loaded from file correctly
+Input Edge Cases	   Handle non-existent IDs, empty strings, invalid operations

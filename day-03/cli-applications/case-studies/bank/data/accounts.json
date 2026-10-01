@@ -1,0 +1,16 @@
+[
+    {
+        "acc_no": "3737d26a",
+        "name": "Purushotham",
+        "email": "purushotham@mindfullearning.in",
+        "acc_type": "Savings",
+        "balance": 999900.0
+    },
+    {
+        "acc_no": "0dcd6287",
+        "name": "Anil",
+        "email": "anil@ust.com",
+        "acc_type": "savings",
+        "balance": 0.0
+    }
+]

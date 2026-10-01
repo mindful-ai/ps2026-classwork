@@ -1,0 +1,56 @@
+Problem Statement: Bank Account Management App
+------------------------------------------------------------------------------------------------------------
+
+You are tasked with developing a command-line Bank Account Management Application in Python. 
+The app should allow users to perform basic banking operations such as:
+
+    Creating new user accounts
+    Updating account details
+    Viewing account details
+    Depositing and withdrawing money
+    Deleting accounts
+
+Each user will have:
+
+    Unique account number (auto-generated)
+    Name
+    Email
+    Balance
+    Account type (savings/current)
+
+Data should be stored in a JSON file so that changes persist across sessions.
+
+Add a PIN-based authentication system:
+
+    User creates an account with a PIN
+    User must authenticate with correct PIN for actions like deposit, withdraw, update
+    PINs are securely stored (we’ll use password hashing)
+    Optional PIN retry limit or error handling
+
+Directory Structure:
+
+bank_app/
+│
+├── models/
+│   ├── __init__.py
+│   └── account.py          # Account class
+│
+├── services/
+│   ├── __init__.py
+│   └── bank_service.py     # Business logic for managing accounts
+│
+├── storage/
+│   ├── __init__.py
+│   └── file_store.py       # JSON file storage
+│
+├── main.py                 # Entry point of the app
+└── data/
+    └── accounts.json       # Data store
+
+
+🧠 Other optional ideas:
+
+✅ Save data to JSON/SQLite for persistence
+✅ Limit incorrect PIN attempts
+✅ Export/import accounts
+✅ Add transaction history

@@ -1,0 +1,22 @@
+bankcli/
+│
+├── bankapp/
+│   ├── __init__.py
+│   ├── main.py         # Typer CLI logic
+│   ├── db.py           # Persistence and authentication logic
+│   ├── models.py       # Your updated Account model
+│   ├── security.py     # PIN hashing/verification
+│
+├── accounts.json       # JSON-based persistent storage
+├── bankcli.py          # CLI entrypoint (for testing)
+├── requirements.txt
+├── README.md
+├── pyproject.toml      # For building/installing CLI
+└── setup.py            # CLI installation config
+
+
+
+
+Installation of the bank app:
+
+pip install -e .          # Execute this where ever .toml file is found

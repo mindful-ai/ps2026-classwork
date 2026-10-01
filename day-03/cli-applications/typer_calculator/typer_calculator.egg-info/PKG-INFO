@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: typer-calculator
+Version: 0.1.0
+Summary: A simple calculator CLI built with Typer
+Author-email: Anil <anil@ust.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: typer[all]

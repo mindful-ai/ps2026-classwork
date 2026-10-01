@@ -1,0 +1,11 @@
+[project]
+name = "typer-calculator"
+version = "0.1.0"
+description = "A simple calculator CLI built with Typer"
+authors = [{ name = "Anil", email = "anil@ust.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["typer[all]"]
+
+[project.scripts]
+calc = "typer_calculator.calculator:app"
