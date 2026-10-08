@@ -1,0 +1,1 @@
+Purpose of the project is to demonstrate the end-to-end flow of the ML enabled Applications
