@@ -1,15 +1,25 @@
-# fastapi_app.py
+from typing import Dict
+
+import pickle
+import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
-import pickle
+
+
+FEATURES = [
+    "age", "sex", "cp", "trestbps", "chol", "fbs",
+    "restecg", "thalach", "exang", "oldpeak", "slope", "ca", "thal"
+]
+
 
 # Load model
 with open("artifacts/heart_pipeline.pkl", "rb") as f:
     model = pickle.load(f)
 
+
 app = FastAPI(title="Heart Disease Prediction API")
 
-# Input schema
+
 class HeartData(BaseModel):
     age: int
     sex: int
@@ -25,13 +35,34 @@ class HeartData(BaseModel):
     ca: int
     thal: int
 
+
+@app.get("/")
+def root():
+    return {"message": "Heart Disease Prediction API is running"}
+
+
 @app.post("/predict")
 def predict(data: HeartData):
-    features = [[
-        data.age, data.sex, data.cp, data.trestbps, data.chol,
-        data.fbs, data.restecg, data.thalach, data.exang,
-        data.oldpeak, data.slope, data.ca, data.thal
-    ]]
-    prediction = model.predict(features)[0]
-    result = "Heart Disease Detected" if prediction == 1 else "No Heart Disease"
-    return {"prediction": int(prediction), "result": result}
+    # IMPORTANT:
+    # The model was fitted with named DataFrame columns.
+    # Use the same names and order at prediction time.
+    features = pd.DataFrame([data.model_dump()])[FEATURES]
+
+    prediction = int(model.predict(features)[0])
+
+    # Probability of the positive class (heart disease = 1)
+    probabilities = model.predict_proba(features)[0]
+    class_to_probability = dict(zip(model.classes_, probabilities))
+    probability = float(class_to_probability[1])
+
+    result = (
+        "Heart Disease Detected"
+        if prediction == 1
+        else "No Heart Disease"
+    )
+
+    return {
+        "prediction": prediction,
+        "result": result,
+        "probability": probability
+    }

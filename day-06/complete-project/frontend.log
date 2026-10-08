@@ -1,0 +1,46 @@
+2026-10-08 12:49:37,116 - ERROR - Frontend Error
+Traceback (most recent call last):
+  File "C:\Users\mindf\OneDrive\Projects\mindful-learning-academy\sapient-ai\classwork\day-06\complete-project\streamlit_app.py", line 41, in <module>
+    st.success(f"Prediction: {result['prediction']} (probability = {result['probability']:.2f})")
+                                                                    ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'probability'
+2026-10-08 12:49:46,101 - ERROR - Frontend Error
+Traceback (most recent call last):
+  File "C:\Users\mindf\OneDrive\Projects\mindful-learning-academy\sapient-ai\classwork\day-06\complete-project\streamlit_app.py", line 41, in <module>
+    st.success(f"Prediction: {result['prediction']} (probability = {result['probability']:.2f})")
+                                                                    ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'probability'
+2026-10-08 12:56:23,912 - ERROR - Frontend Error
+Traceback (most recent call last):
+  File "C:\Users\mindf\OneDrive\Projects\mindful-learning-academy\sapient-ai\classwork\day-06\complete-project\streamlit_app.py", line 41, in <module>
+    st.success(f"Prediction: {result['prediction']} (probability = {result['probability']:.2f})")
+                                                                    ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'probability'
+2026-10-08 13:04:23,933 - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-10-08 13:04:23,938 - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-10-08 13:04:26,390 - INFO - User input: {'age': 50, 'sex': 0, 'cp': 0, 'trestbps': 120, 'chol': 200, 'fbs': 0, 'restecg': 0, 'thalach': 150, 'exang': 0, 'oldpeak': 1.0, 'slope': 1, 'ca': 0, 'thal': 1} -> Result: {'prediction': 0, 'result': 'No Heart Disease', 'probability': 0.04666858653107892}
+2026-10-08 13:04:55,677 - INFO - User input: {'age': 50, 'sex': 0, 'cp': 0, 'trestbps': 120, 'chol': 200, 'fbs': 0, 'restecg': 0, 'thalach': 150, 'exang': 0, 'oldpeak': 1.0, 'slope': 1, 'ca': 0, 'thal': 1} -> Result: {'prediction': 0, 'result': 'No Heart Disease', 'probability': 0.04666858653107892}
+2026-10-08 13:05:13,541 - INFO - User input: {'age': 50, 'sex': 0, 'cp': 0, 'trestbps': 120, 'chol': 200, 'fbs': 0, 'restecg': 2, 'thalach': 156, 'exang': 0, 'oldpeak': 1.0, 'slope': 1, 'ca': 0, 'thal': 1} -> Result: {'prediction': 0, 'result': 'No Heart Disease', 'probability': 0.07324513818789156}
+2026-10-08 13:05:23,069 - INFO - User input: {'age': 50, 'sex': 0, 'cp': 2, 'trestbps': 120, 'chol': 200, 'fbs': 0, 'restecg': 2, 'thalach': 156, 'exang': 0, 'oldpeak': 1.0, 'slope': 1, 'ca': 0, 'thal': 1} -> Result: {'prediction': 0, 'result': 'No Heart Disease', 'probability': 0.045699371897809066}
+2026-10-08 14:17:42,102 - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host

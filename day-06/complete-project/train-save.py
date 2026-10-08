@@ -1,15 +1,23 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler, LabelEncoder
-from sklearn.pipeline import Pipeline
-from sklearn.linear_model import LogisticRegression
-import pickle
 import os
+import pickle
+
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+
+
+FEATURES = [
+    "age", "sex", "cp", "trestbps", "chol", "fbs",
+    "restecg", "thalach", "exang", "oldpeak", "slope", "ca", "thal"
+]
+
 
 # Load dataset
 df = pd.read_csv("heart.csv")
 
-# Rename columns to match code expectations
+# Rename columns to match the API feature names
 df = df.rename(columns={
     "Age": "age",
     "Sex": "sex",
@@ -27,35 +35,52 @@ df = df.rename(columns={
     "AHD": "target"
 })
 
-# Encode categorical columns
-df["cp"] = df["cp"].map({"typical": 0, "asymptomatic": 1, "nonanginal": 2, "nontypical": 3})
-df["thal"] = df["thal"].map({"normal": 1, "fixed": 2, "reversable": 3})
+# Encode categorical columns using the same values expected by the API
+df["cp"] = df["cp"].map({
+    "typical": 0,
+    "asymptomatic": 1,
+    "nonanginal": 2,
+    "nontypical": 3
+})
+
+df["thal"] = df["thal"].map({
+    "normal": 1,
+    "fixed": 2,
+    "reversable": 3
+})
+
 df["target"] = df["target"].map({"No": 0, "Yes": 1})
+
+# Remove rows with missing values after encoding
 df = df.dropna()
 
-# Features & target
-X = df.drop(["target", "index"], axis=1)
+X = df[FEATURES]
 y = df["target"]
 
-# Train-test split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Keep the feature names in the training DataFrame
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42,
+    stratify=y
+)
 
-# Build pipeline
 pipeline = Pipeline([
     ("scaler", StandardScaler()),
     ("clf", LogisticRegression(max_iter=1000))
 ])
 
-# Train model
 pipeline.fit(X_train, y_train)
 
-# Evaluate
 print("Train Accuracy:", pipeline.score(X_train, y_train))
 print("Test Accuracy:", pipeline.score(X_test, y_test))
 
-# Save model
+# Save the complete preprocessing + model pipeline
 os.makedirs("artifacts", exist_ok=True)
+
 with open("artifacts/heart_pipeline.pkl", "wb") as f:
     pickle.dump(pipeline, f)
 
-print("✅ Model saved to artifacts/heart_pipeline.pkl")
+print("Model saved to artifacts/heart_pipeline.pkl")
+print("Features:", FEATURES)
