@@ -10,7 +10,7 @@ def read_root():
 
 @app.get("/hello/{name}")
 def say_hello(name: str):
-    return {"message": f"Hello {name}, welcome to FastAPI!"}
+    return f'<h1 style="color: blue;">Hello {name}, welcome to FastAPI!</h1>'
 
 
 '''

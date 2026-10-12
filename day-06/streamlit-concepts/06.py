@@ -10,6 +10,9 @@ target = st.selectbox("Select the target variable", data.columns)
 features = st.multiselect("Select feature(s)", data.columns)
 
 if features:
+    X = data[features]
+    y = data[target]
+    model.fit(X, y)
     y_pred = model.predict(X)
     mse = mean_squared_error(y, y_pred)
     r2 = r2_score(y, y_pred)

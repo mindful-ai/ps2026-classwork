@@ -36,7 +36,7 @@ def generate_text(start_word, length=10):
     return ' '.join(generated_text)
 
 # Generate text starting with 'i'
-generated_text = generate_text('love', 10)
+generated_text = generate_text('great', 10)
 print("Generated Text:", generated_text)
 
 
