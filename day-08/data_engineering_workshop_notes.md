@@ -324,7 +324,7 @@ This definition must be agreed upon by the business. Another company might treat
 | Reconciliation | Differences between source and target totals |
 | Freshness | Data that has not arrived on time |
 
-**Workshop exercise:** A report shows 12,000 orders, but the source system shows 11,800. Ask students to investigate duplicate records, date filters, late-arriving data and source-to-target reconciliation before changing the SQL.
+**Workshop exercise:** A report shows 12,000 orders, but the source system shows 11,800.Investigate duplicate records, date filters, late-arriving data and source-to-target reconciliation before changing the SQL.
 
 **Key lesson:** Trustworthy data requires defined business rules, appropriate SQL and repeatable quality checks.
 
@@ -400,7 +400,7 @@ Suppose an order total is ₹1,500 and it has three items. Summing the repeated 
 
 **Design rule:** Declare the grain before defining measures, keys, joins and aggregations.
 
-**Workshop exercise:** Ask students to design a dataset for “daily product sales by region.” They should state whether one row represents a product-region-day combination and define a key consistent with that grain.
+**Workshop exercise:** Design a dataset for “daily product sales by region.” They should state whether one row represents a product-region-day combination and define a key consistent with that grain.
 
 ## 3.3 Schema checks, null rules and reconciliation controls
 
