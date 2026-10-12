@@ -1,0 +1,151 @@
+product_id,product_name,product_category,brand,cost_price
+P20000,Books Product 1,Books,Zenith,722.44
+P20001,Sports Product 2,Sports,Orbit,6778.74
+P20002,Sports Product 3,Sports,Nova,13064.92
+P20003,Electronics Product 4,Electronics,Apex,5873.86
+P20004,Electronics Product 5,Electronics,Nova,21055.39
+P20005,Fashion Product 6,Fashion,Orbit,4954.9
+P20006,Books Product 7,Books,Nova,246.54
+P20007,Books Product 8,Books,Nova,1696.77
+P20008,Books Product 9,Books,Nova,332.42
+P20009,Fashion Product 10,Fashion,Nova,3881.52
+P20010,Fashion Product 11,Fashion,Apex,9334.86
+P20011,Fashion Product 12,Fashion,Apex,6122.84
+P20012,Home Product 13,Home & Kitchen,Prime,17836.0
+P20013,Sports Product 14,Sports,Zenith,14132.57
+P20014,Fashion Product 15,Fashion,Orbit,6185.93
+P20015,Sports Product 16,Sports,Apex,12152.17
+P20016,Electronics Product 17,Electronics,Prime,24587.05
+P20017,Books Product 18,Books,Zenith,161.63
+P20018,Electronics Product 19,Electronics,Vertex,17344.48
+P20019,Fashion Product 20,Fashion,Zenith,3810.61
+P20020,Fashion Product 21,Fashion,Prime,8724.56
+P20021,Fashion Product 22,Fashion,Prime,2041.76
+P20022,Sports Product 23,Sports,Apex,544.47
+P20023,Home Product 24,Home & Kitchen,Nova,19401.07
+P20024,Books Product 25,Books,Prime,1166.33
+P20025,Fashion Product 26,Fashion,Orbit,7444.21
+P20026,Books Product 27,Books,Apex,1127.0
+P20027,Sports Product 28,Sports,Orbit,14807.01
+P20028,Sports Product 29,Sports,Nova,11093.88
+P20029,Home Product 30,Home & Kitchen,Zenith,14325.26
+P20030,Sports Product 31,Sports,Vertex,11837.47
+P20031,Books Product 32,Books,Nova,406.87
+P20032,Books Product 33,Books,Apex,2097.65
+P20033,Sports Product 34,Sports,Orbit,2770.38
+P20034,Home Product 35,Home & Kitchen,Nova,9798.72
+P20035,Fashion Product 36,Fashion,Zenith,2274.08
+P20036,Books Product 37,Books,Prime,1779.78
+P20037,Electronics Product 38,Electronics,Prime,2529.93
+P20038,Sports Product 39,Sports,Apex,13568.93
+P20039,Books Product 40,Books,Zenith,1826.02
+P20040,Fashion Product 41,Fashion,Prime,1406.36
+P20041,Electronics Product 42,Electronics,Vertex,38306.05
+P20042,Fashion Product 43,Fashion,Prime,3461.45
+P20043,Electronics Product 44,Electronics,Vertex,46167.17
+P20044,Fashion Product 45,Fashion,Prime,3563.61
+P20045,Sports Product 46,Sports,Prime,11119.24
+P20046,Home Product 47,Home & Kitchen,Prime,15766.11
+P20047,Sports Product 48,Sports,Orbit,12184.18
+P20048,Electronics Product 49,Electronics,Nova,18025.81
+P20049,Electronics Product 50,Electronics,Apex,44642.41
+P20050,Sports Product 51,Sports,Prime,14147.51
+P20051,Fashion Product 52,Fashion,Zenith,8562.64
+P20052,Sports Product 53,Sports,Vertex,11132.69
+P20053,Home Product 54,Home & Kitchen,Vertex,10851.38
+P20054,Books Product 55,Books,Orbit,867.14
+P20055,Home Product 56,Home & Kitchen,Prime,18698.33
+P20056,Electronics Product 57,Electronics,Prime,36415.76
+P20057,Electronics Product 58,Electronics,Orbit,1343.96
+P20058,Sports Product 59,Sports,Apex,2427.1
+P20059,Sports Product 60,Sports,Zenith,7647.54
+P20060,Fashion Product 61,Fashion,Vertex,2977.25
+P20061,Books Product 62,Books,Prime,182.43
+P20062,Home Product 63,Home & Kitchen,Vertex,19809.6
+P20063,Electronics Product 64,Electronics,Prime,34779.14
+P20064,Fashion Product 65,Fashion,Zenith,5051.25
+P20065,Books Product 66,Books,Orbit,241.15
+P20066,Books Product 67,Books,Zenith,2086.92
+P20067,Electronics Product 68,Electronics,Prime,56118.43
+P20068,Electronics Product 69,Electronics,Prime,3911.93
+P20069,Sports Product 70,Sports,Zenith,12894.65
+P20070,Books Product 71,Books,Apex,2462.53
+P20071,Fashion Product 72,Fashion,Zenith,9912.42
+P20072,Fashion Product 73,Fashion,Apex,4339.89
+P20073,Fashion Product 74,Fashion,Apex,7625.6
+P20074,Home Product 75,Home & Kitchen,Vertex,14617.07
+P20075,Home Product 76,Home & Kitchen,Zenith,14111.84
+P20076,Fashion Product 77,Fashion,Nova,1482.83
+P20077,Books Product 78,Books,Vertex,2178.05
+P20078,Electronics Product 79,Electronics,Prime,18801.18
+P20079,Fashion Product 80,Fashion,Vertex,1548.1
+P20080,Fashion Product 81,Fashion,Apex,8992.74
+P20081,Electronics Product 82,Electronics,Prime,12382.78
+P20082,Fashion Product 83,Fashion,Apex,7314.38
+P20083,Fashion Product 84,Fashion,Prime,7897.89
+P20084,Sports Product 85,Sports,Orbit,14270.85
+P20085,Home Product 86,Home & Kitchen,Zenith,18541.91
+P20086,Electronics Product 87,Electronics,Orbit,11434.27
+P20087,Electronics Product 88,Electronics,Vertex,39285.79
+P20088,Fashion Product 89,Fashion,Zenith,6344.33
+P20089,Home Product 90,Home & Kitchen,Nova,2640.41
+P20090,Home Product 91,Home & Kitchen,Apex,13853.29
+P20091,Sports Product 92,Sports,Prime,11254.44
+P20092,Books Product 93,Books,Prime,1680.45
+P20093,Books Product 94,Books,Prime,1017.04
+P20094,Fashion Product 95,Fashion,Orbit,3799.77
+P20095,Electronics Product 96,Electronics,Nova,8025.45
+P20096,Fashion Product 97,Fashion,Vertex,2404.36
+P20097,Fashion Product 98,Fashion,Vertex,4899.08
+P20098,Fashion Product 99,Fashion,Nova,7984.57
+P20099,Electronics Product 100,Electronics,Orbit,59997.29
+P20100,Books Product 101,Books,Apex,1471.42
+P20101,Electronics Product 102,Electronics,Nova,43055.07
+P20102,Sports Product 103,Sports,Vertex,3017.88
+P20103,Books Product 104,Books,Nova,1045.11
+P20104,Books Product 105,Books,Vertex,1272.55
+P20105,Fashion Product 106,Fashion,Vertex,5482.02
+P20106,Books Product 107,Books,Prime,397.81
+P20107,Books Product 108,Books,Prime,2254.25
+P20108,Electronics Product 109,Electronics,Vertex,41956.78
+P20109,Electronics Product 110,Electronics,Orbit,48190.37
+P20110,Electronics Product 111,Electronics,Zenith,34844.8
+P20111,Fashion Product 112,Fashion,Nova,5712.46
+P20112,Sports Product 113,Sports,Nova,1543.77
+P20113,Electronics Product 114,Electronics,Apex,22322.73
+P20114,Fashion Product 115,Fashion,Orbit,9775.61
+P20115,Fashion Product 116,Fashion,Zenith,3145.88
+P20116,Sports Product 117,Sports,Vertex,13597.91
+P20117,Home Product 118,Home & Kitchen,Vertex,9064.93
+P20118,Fashion Product 119,Fashion,Prime,3266.77
+P20119,Sports Product 120,Sports,Apex,9210.73
+P20120,Fashion Product 121,Fashion,Prime,1170.29
+P20121,Books Product 122,Books,Zenith,188.16
+P20122,Electronics Product 123,Electronics,Zenith,57479.44
+P20123,Fashion Product 124,Fashion,Zenith,5999.47
+P20124,Home Product 125,Home & Kitchen,Prime,12559.56
+P20125,Electronics Product 126,Electronics,Apex,16231.93
+P20126,Fashion Product 127,Fashion,Zenith,4120.58
+P20127,Electronics Product 128,Electronics,Apex,40850.32
+P20128,Sports Product 129,Sports,Zenith,8177.79
+P20129,Electronics Product 130,Electronics,Prime,16748.46
+P20130,Fashion Product 131,Fashion,Prime,2087.75
+P20131,Home Product 132,Home & Kitchen,Prime,13061.09
+P20132,Fashion Product 133,Fashion,Zenith,4312.93
+P20133,Electronics Product 134,Electronics,Orbit,23233.36
+P20134,Sports Product 135,Sports,Zenith,1439.61
+P20135,Electronics Product 136,Electronics,Nova,41291.57
+P20136,Home Product 137,Home & Kitchen,Apex,12911.5
+P20137,Home Product 138,Home & Kitchen,Apex,15628.0
+P20138,Electronics Product 139,Electronics,Zenith,16999.89
+P20139,Electronics Product 140,Electronics,Zenith,23215.04
+P20140,Electronics Product 141,Electronics,Nova,11203.3
+P20141,Books Product 142,Books,Apex,1513.18
+P20142,Books Product 143,Books,Nova,1369.5
+P20143,Books Product 144,Books,Apex,1423.7
+P20144,Fashion Product 145,Fashion,Nova,1873.32
+P20145,Sports Product 146,Sports,Orbit,2955.89
+P20146,Books Product 147,Books,Prime,2423.2
+P20147,Fashion Product 148,Fashion,Vertex,8843.81
+P20148,Home Product 149,Home & Kitchen,Vertex,2813.17
+P20149,Electronics Product 150,Electronics,Vertex,43022.78
