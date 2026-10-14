@@ -1,0 +1,15 @@
+[project]
+name = "mlops-foundations"
+version = "0.1.0"
+description = "MLOps foundations tutorial using MLflow and scikit-learn"
+requires-python = ">=3.10"
+dependencies = [
+  "mlflow>=2.15,<4",
+  "scikit-learn>=1.5,<2",
+  "pandas>=2.2,<4",
+  "numpy>=1.26,<3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
