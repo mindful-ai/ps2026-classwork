@@ -7,7 +7,7 @@ import mlflow
 mlflow.set_tracking_uri("sqlite:///mlflow.db")
 
 # 2. Create or select an experiment
-mlflow.set_experiment("Fresh MLflow Demo")
+mlflow.set_experiment("MLflow Basics")
 
 
 def calculate_metric(a, b):
