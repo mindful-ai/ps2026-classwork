@@ -1,0 +1,1 @@
+ssh -i "my-key.pem" ec2-user@54.123.45.67
