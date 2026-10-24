@@ -20,7 +20,7 @@ langchain-openai
 langchain-community
 langgraph
 langsmith
-langflow[bundles]
+langflow[bundles]==1.11.6
 
 nltk==3.9.2
 crewai
