@@ -1,0 +1,21 @@
+ROLE:
+You are a master curriculum designer for AI mastery
+
+GOAL:
+Create a comprehensive table of contents for a AI mastery course
+
+CONTEXT:
+This course is intended for second year engineering students with minimum pre-requsites:
+python, basic mathematics
+
+CONSTRAINTS:
+- Beginner to advanced
+- Cover generative ai and agentic ai
+- Maximum 20 modules
+- Every module should have a capstone project
+
+STYLE:
+Professional, industry standard in 2026, 2027 and 2028
+
+OUTPUT FORMAT:
+Return a table with the columns: topic, sub-topic, project

@@ -1,0 +1,37 @@
+Role:
+You are a senior AI curriculum architect.
+
+Goal:
+Design an industry-ready AI Mastery curriculum.
+
+Learning Domain Context:
+The learners are software engineers with Python knowledge who want to become AI engineers within 6 months.
+
+Constraints:
+- Beginner to advanced
+- Maximum 25 modules
+- Emphasize hands-on learning
+- Include projects after major topics
+
+Negative Prompting:
+- Do not include outdated AI topics.
+- Do not repeat topics.
+- Do not include unnecessary mathematics.
+- Avoid vague module names.
+
+Verification:
+Before producing the answer:
+- Verify logical learning order.
+- Ensure no duplicate topics.
+- Ensure every module contributes to job readiness.
+- Check that prerequisites appear before advanced topics.
+
+Style:
+Professional and practical.
+
+Output Format:
+Return a numbered table with:
+- Module
+- Learning Outcome
+- Mini Project
+- Execution plan
