@@ -1,0 +1,7 @@
+
+Synthetic Windows security training notes — not official CIS guidance.
+Use unique user accounts and apply least privilege.
+Enable security logging appropriate to organisational policy.
+Apply security updates through a tested patch-management process.
+Review firewall rules and disable services that are not required.
+Validate configuration changes in a test environment before deployment.
