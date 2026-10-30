@@ -1,0 +1,25 @@
+# Core LangChain and local model integrations
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+langchain-huggingface
+langchain-text-splitters
+
+# PDF ingestion and local embeddings
+pypdf
+sentence-transformers
+
+# Vector and keyword retrieval
+faiss-cpu
+chromadb
+rank-bm25
+
+# Evaluation and graph support for later notebooks
+ragas
+datasets
+networkx
+
+# Configuration and notebook support
+python-dotenv
+ipykernel

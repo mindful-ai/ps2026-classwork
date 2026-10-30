@@ -1,0 +1,25 @@
+# Secrets and local configuration
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local indexes and generated outputs
+vector_store/*
+!vector_store/.gitkeep
+evaluation_results/*
+!evaluation_results/.gitkeep
+
+# Local source data may be licensed or sensitive; review before committing.
+data/benchmark/*
+!data/benchmark/.gitkeep
+data/machine_evidence/*
+!data/machine_evidence/.gitkeep
+data/evaluation/*
+!data/evaluation/.gitkeep
